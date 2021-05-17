@@ -14,4 +14,4 @@ Web制作をしています🧑‍💻
 
 ## [#Vtuber活動範囲シート](https://twitter.com/hashtag/Vtuber活動範囲シート)
 
-[![Ecma Kawarabe on twitter](./docs/image/profile.jpg)](https://twitter.com/KawarabeEcma)
+[![Ecma Kawarabe on twitter](./asset/image/profile.jpg)](https://twitter.com/KawarabeEcma)
