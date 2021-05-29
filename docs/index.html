@@ -4,6 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>河童エクマのプロフィール</title>
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    body {
+      margin: 0;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 10px;
+      background: rgb(124, 225, 222);
+    }
+
+    main {
+      padding: 0 20px;
+    }
+
+    footer {
+      padding: 40px 20px;
+      margin: 200px 0 0;
+      text-align: center;
+      background: #fcfc30;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 0;
+      animation: fadeIn .5s ease-out;
+    }
+
+    h2 {
+      position: relative;
+      padding-left: 21px;
+      margin-top: 200px;
+    }
+
+    h2::before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 8px;
+      height: 38px;
+      display: block;
+      content: "";
+      background: #008080;
+    }
+
+    a {
+      color: teal;
+      transition: .2s color ease-out;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    dt {
+      margin-top: 30px;
+    }
+
+    p.lede {
+      color: tomato;
+    }
+
+    .hashtag {
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 6px;
+      transition: .2s color ease-out, .2s background ease-out;
+    }
+
+    .hashtag:hover {
+      background: chartreuse;
+    }
+
+    .relatedLinks li {
+      margin: 20px 0;
+    }
+
+    .relatedLinks li:first-child {
+      padding: 10px;
+      list-style: none;
+      border-radius: 12px;
+      text-align: center;
+      background: red;
+    }
+
+    .relatedLinks li:first-child a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .relatedLinks li:first-child a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -11,7 +122,7 @@
   </header>
 
   <main>
-    <p>これは私のプロフィールです。</p>
+    <p class="lede">これは私のプロフィールです。</p>
 
     <h2>プロフィール</h2>
 
@@ -23,15 +134,15 @@
       <dt>FanMark</dt>
       <dd>🥒</dd>
       <dt>Stream</dt>
-      <dd><a href="https://twitter.com/hashtag/%E3%81%8B%E3%82%8F%E3%82%89%E3%81%84%E3%81%B6">#かわらいぶ</a></dd>
+      <dd><a class="hashtag" href="https://twitter.com/hashtag/%E3%81%8B%E3%82%8F%E3%82%89%E3%81%84%E3%81%B6">#かわらいぶ</a></dd>
       <dt>FanName</dt>
-      <dd><a href="https://twitter.com/hashtag/%E3%81%8D%E3%82%85%E3%83%BC%E3%81%8B%E3%82%93%E3%81%B0%E3%83%BC%E3%81%9A">#きゅーかんばーず （仮）</a></dd>
+      <dd><a class="hashtag" href="https://twitter.com/hashtag/%E3%81%8D%E3%82%85%E3%83%BC%E3%81%8B%E3%82%93%E3%81%B0%E3%83%BC%E3%81%9A">#きゅーかんばーず （仮）</a></dd>
       <dt>FanArt</dt>
-      <dd><a href="https://twitter.com/hashtag/%E6%B2%B3%E7%AB%A5%E7%B5%B5%E5%B7%BB">#河童絵巻</a></dd>
+      <dd><a class="hashtag" href="https://twitter.com/hashtag/%E6%B2%B3%E7%AB%A5%E7%B5%B5%E5%B7%BB">#河童絵巻</a></dd>
       <dt>Clip</dt>
-      <dd><a href="https://twitter.com/hashtag/%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF%E3%81%8D%E3%82%85%E3%83%BC%E3%82%8A">#おつまみきゅーり </a></dd>
+      <dd><a class="hashtag" href="https://twitter.com/hashtag/%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF%E3%81%8D%E3%82%85%E3%83%BC%E3%82%8A">#おつまみきゅーり </a></dd>
       <dt>Other</dt>
-      <dd><a href="https://twitter.com/hashtag/%E3%81%B8%E3%81%A3%E3%81%BD%E3%81%93%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E9%81%93">#へっぽこフロントエンド道</a></dd>
+      <dd><a class="hashtag" href="https://twitter.com/hashtag/%E3%81%B8%E3%81%A3%E3%81%BD%E3%81%93%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E9%81%93">#へっぽこフロントエンド道</a></dd>
     </dl>
 
     <h2>好きなもの</h2>
@@ -58,7 +169,7 @@
 
     <h2>関連リンク</h2>
 
-    <ul>
+    <ul class="relatedLinks">
       <li><a href="https://www.youtube.com/channel/UCtayGWXp2NWel6CyfBcWw6Q?sub_confirmation=1">YouTube Channel</a></li>
       <li><a href="https://twitter.com/kawarabeecma">Twitter</a></li>
       <li><a href="https://marshmallow-qa.com/kawarabeecma">マシュマロ（Q&amp;A, Contact）</a></li>
